@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const genAI = new GoogleGenerativeAI("AIzaSyDgfUQfBiJ2RoPrYdhwOjgkGf4iCs1v024"); // Replace with your actual API key
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 // Helper function for exponential backoff retry
 const retryWithBackoff = async (fn, retries = 5, delay = 1000) => {
@@ -152,4 +152,5 @@ export const generateDescription = async (topic) => {
     }
   });
 };
+
 
