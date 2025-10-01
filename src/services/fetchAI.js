@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyDjJlGAwDYdhitxCyDlgNpMhGQyC3wP63Y"); // Replace with your actual API key
+const genAI = new GoogleGenerativeAI("AIzaSyDgfUQfBiJ2RoPrYdhwOjgkGf4iCs1v024"); // Replace with your actual API key
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // Helper function for exponential backoff retry
@@ -152,3 +152,4 @@ export const generateDescription = async (topic) => {
     }
   });
 };
+
