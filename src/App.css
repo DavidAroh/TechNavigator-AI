@@ -14,7 +14,7 @@ body, html, #root {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #000000;
   position: relative;
   overflow: hidden;
 }
